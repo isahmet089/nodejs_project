@@ -4,6 +4,7 @@ const cors=require("cors")
 const fs =require("node:fs");
 const path=require("node:path");
 const PORT=3000;
+const {logger}=require("./middleware/logEvents");
 
 // tüm originlere izin veren basit yapılandırma
 const corsOptions ={
@@ -28,6 +29,8 @@ const corsOptions ={
 
 };
 app.use(cors(corsOptions));
+// request logger middilware
+app.use(logger);
 
 // Midilware to parse JSON badies
 app.use(express.json());
