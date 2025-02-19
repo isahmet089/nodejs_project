@@ -7,7 +7,8 @@ const PORT=3000;
 
 // Midilware to parse JSON badies
 app.use(express.json());
-
+// contet-type html deki kodu javasc kodunun anlayabilceği hale getiren midilware
+app.use(express.urlencoded({extended:false}));
 const filePath="data.json";
 
 const readData=()=>{
@@ -17,12 +18,7 @@ const readData=()=>{
 const writeData=(users)=>{
     fs.writeFileSync(filePath,JSON.stringify(users,null,2));
 };
-
-let users=[
-    {id:1,name:"ahmet",age:25,email:"ahmetozcan@info.com"},
-    {id:2,name:"mehmet",age:45,email:"mehmet@info.com"}
-];
-//get
+//get   
 app.get("/",(req,res)=>{
     const data =readData();
     res.json(data);
@@ -61,6 +57,18 @@ app.delete("/:userId",(req,res)=>{
     users =users.filter((user)=>user.id !== Number(userId));
     writeData(users);
     res.status(204).json(users);
+});
+
+app.post("/submit",(req,res)=>{
+    console.log(req.body);
+    res.send("form verileri alındı");
+    
+
+});
+
+app.get("/form",(req,res)=>{
+    res.status(200).sendFile(path.join(__dirname,"views","index.html"));
+        
 });
 
 
