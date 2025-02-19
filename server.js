@@ -6,7 +6,29 @@ const path=require("node:path");
 const PORT=3000;
 
 // tüm originlere izin veren basit yapılandırma
-app.use(cors());
+const corsOptions ={
+    origin:function(origin,callBack){
+        // izin verilen origin listesi
+        const whiteList=[
+            "http://localhost:3000",
+            "http://localhost:5173",
+            "http://127.0.0.1:3000",
+            "https://www.google.com.tr",
+        ];
+        if (whiteList.indexOf(origin)!== -1 || !origin) {
+            callBack(null,true);
+        }else{
+            callBack(new Error("CORS politikası tarafından engellendiniz"));
+        }
+    },
+    methods:["GET","POST","PUT","DELETE","OPTIONS"],
+    allowedHeaders:["Content-Type","Authorization"],
+    credentials:true,
+    maxAge:86400, // 24 saat
+
+};
+app.use(cors(corsOptions));
+
 // Midilware to parse JSON badies
 app.use(express.json());
 // contet-type html deki kodu javasc kodunun anlayabilceği hale getiren midilware
