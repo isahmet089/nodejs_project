@@ -21,6 +21,7 @@
   "homepage": "https://github.com/isahmet089/nodejs_project#readme",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "date-fns": "^4.1.0",
     "express": "^4.21.2",

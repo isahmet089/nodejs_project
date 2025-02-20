@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const cookieParser=require("cookie-parser");
 const corsOptions = require("./config/corsConfig");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
@@ -12,6 +13,7 @@ const app = express();
 // Middleware
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use(cookieParser())
 app.use(express.urlencoded({ extended: false }));
 app.use(logger);
 
