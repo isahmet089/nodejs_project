@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "cd src && nodemon server.js",
+    "start2": "node server.js",
+    "start": "cd src && nodemon server.js",
     "watch": "nodemon --watch server.js"
   },
   "repository": {
