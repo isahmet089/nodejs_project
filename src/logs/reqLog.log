@@ -67,3 +67,12 @@
 20.02.2025 	 18.02.26	2659e33b-beed-4e1e-9e0b-3a42b904c603	GET	/api/users	undefined
 20.02.2025 	 18.02.51	07ed056c-656f-440b-8e96-592565951984	GET	/api/users	undefined
 20.02.2025 	 18.02.17	ce943be5-44ca-4e7e-a192-f6e12d1e2934	GET	/api/users	undefined
+20.02.2025 	 19.02.23	567ab586-04bf-4cd7-8eb8-37486c9fe06c	POST	/api/auth/login	undefined
+20.02.2025 	 19.02.41	9dd54863-eea7-47b5-887f-3d2271c5a97c	POST	/api/auth/login	undefined
+20.02.2025 	 19.02.20	3d8ce780-3749-4ac8-856a-18734c332950	POST	/api/auth/register	undefined
+20.02.2025 	 19.02.10	f797da3b-c0b1-4f06-8977-8283c36146ad	POST	/api/auth/register	undefined
+20.02.2025 	 19.02.20	f0c1d509-3a31-45c5-af83-c374b8014f7c	POST	/api/auth/register	undefined
+20.02.2025 	 19.02.27	3cecb354-a0b7-4b90-ab03-913cf1a5db8a	POST	/api/auth/register	undefined
+20.02.2025 	 19.02.04	ff03b9ce-c468-4bd9-8caa-9d1e7bb03919	POST	/api/auth/register	undefined
+20.02.2025 	 19.02.24	f4ee4966-46f1-45fb-8314-583971a2e308	POST	/api/auth/register	undefined
+20.02.2025 	 19.02.34	374b413f-1e25-4588-bfaf-6221ae680f7a	POST	/api/auth/login	undefined
