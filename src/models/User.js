@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 class User {
   constructor() {
-    this.filePath = path.join(__dirname, '..', '..', 'data.json');
+    this.filePath = path.join(__dirname, '..', '..', 'users.json');
   }
   readData() {
     const jsonData = fs.readFileSync(this.filePath);

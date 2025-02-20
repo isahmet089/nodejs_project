@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1740063439189,
+    "email": "emin@email.com",
+    "password": "$2b$10$VIPKpTM/gedSuJI/xGkr3uZsvbaWOa2W1zU8A/rFKBEZgRN.ejEwy"
+  },
+  {
+    "id": 1740063448744,
+    "email": "mehmet@email.com",
+    "password": "$2b$10$06DQ0S/EuyuoqrsUYEJph.ABPjqVuo0NxxQtnW.Slka.eXwzUcWTe"
+  },
+  {
+    "id": 1740063475260,
+    "email": "mustafa@email.com",
+    "password": "$2b$10$iJPBhi/La81JqiROTPbhguJsWGi8oofNyhl3p8d/TEXjog3HhdALO"
+  },
+  {
+    "id": 1740063833130,
+    "email": "mahmut@email.com",
+    "password": "$2b$10$QdIrv6.7OXChLkbjjG4.AeWWZP.84qv3HtHwRYFn4/qBoR1cFQdBW"
+  },
+  {
+    "id": 1740064104624,
+    "email": "remzi@email.com",
+    "password": "$2b$10$TfJkl.malR4W9aVdaeMCLOPa8vUGiyTpdoQEuCezFiWDwzSv0I1HW"
+  }
+]
