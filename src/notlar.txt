@@ -1,0 +1,3 @@
+fatih123640
+XYtaB1n9BStxNQow
+mongodb+srv://fatih123640:<db_password>@cluster1.7jhqj.mongodb.net/
